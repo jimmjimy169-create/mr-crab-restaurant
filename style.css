@@ -1,0 +1,693 @@
+/* =====================================
+   تنظیمات کلی سایت
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Tahoma, Arial, sans-serif;
+
+    background-color: #f5f5f5;
+
+    color: #222;
+
+    direction: rtl;
+}
+
+
+/* =====================================
+   منوی بالای سایت
+===================================== */
+
+nav {
+    width: 100%;
+
+    background-color: #222;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 15px 30px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 2000;
+}
+
+nav h2 {
+    margin: 0;
+
+    font-size: 22px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-right: 20px;
+
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+
+/* =====================================
+   بنر اصلی صفحه خانه
+===================================== */
+
+.hero {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+
+    height: auto;
+
+    min-height: 400px;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =====================================
+   پیشنهاد سرآشپز
+===================================== */
+
+.chef-banner {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0 0 40px 0;
+
+    text-align: center;
+
+    background-color: white;
+
+    overflow: hidden;
+}
+
+.chef-banner img {
+    width: 100%;
+
+    height: 500px;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+.chef-banner h1 {
+    margin: 30px 0 20px;
+
+    font-size: 36px;
+
+    color: #d62828;
+}
+
+
+/* =====================================
+   بنر برگر در صفحه اصلی
+===================================== */
+
+.burger-preview {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0 0 50px 0;
+
+    text-align: center;
+
+    background-color: white;
+
+    overflow: hidden;
+}
+
+.burger-preview img {
+    width: 100%;
+
+    height: 500px;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+.burger-preview h1 {
+    margin: 30px 0 20px;
+
+    font-size: 36px;
+
+    color: #d62828;
+}
+
+
+/* =====================================
+   دکمه‌های سایت
+===================================== */
+
+button {
+    border: none;
+
+    background-color: #e63946;
+
+    color: white;
+
+    padding: 13px 28px;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #b91c2a;
+
+    transform: scale(1.03);
+}
+
+
+/* =====================================
+   منوی رستوران
+===================================== */
+
+#menu {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+.menu-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.menu-buttons a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: #0077b6;
+
+    color: white;
+
+    padding: 18px 30px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    transition: 0.2s;
+}
+
+.menu-buttons a:hover {
+    background-color: #023e8a;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   بنر صفحات برگر، نوشیدنی و سالاد
+===================================== */
+
+.category-banner {
+    width: 100%;
+
+    height: 500px;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.category-banner img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =====================================
+   عنوان صفحات
+===================================== */
+
+.page-title {
+    text-align: center;
+
+    font-size: 36px;
+
+    margin: 40px 0;
+
+    color: #222;
+}
+
+
+/* =====================================
+   کارت‌های غذا
+===================================== */
+
+.foods {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.food {
+    background-color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    transition: 0.2s;
+}
+
+.food:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.18);
+}
+
+.food h2 {
+    margin-top: 0;
+
+    font-size: 23px;
+}
+
+.food p {
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.food strong {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    font-size: 20px;
+
+    color: #d62828;
+}
+
+.food a {
+    text-decoration: none;
+}
+
+
+/* =====================================
+   درباره ما
+===================================== */
+
+.about {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 50px auto;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 28px;
+}
+
+.about p {
+    font-size: 18px;
+
+    line-height: 2;
+}
+
+
+/* =====================================
+   تماس با ما
+===================================== */
+
+.contact {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 50px auto;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 28px;
+}
+
+.contact p {
+    font-size: 18px;
+
+    line-height: 2;
+}
+
+
+/* =====================================
+   دکمه بازگشت به خانه
+===================================== */
+
+.home-button {
+    display: block;
+
+    width: 230px;
+
+    margin: 45px auto;
+
+    padding: 15px;
+
+    background-color: #0077b6;
+
+    color: white;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    transition: 0.2s;
+}
+
+.home-button:hover {
+    background-color: #023e8a;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   صفحه ثبت سفارش
+===================================== */
+
+.success {
+    width: 90%;
+
+    max-width: 700px;
+
+    margin: 100px auto;
+
+    padding: 50px 30px;
+
+    background-color: white;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.success h1 {
+    color: #198754;
+
+    font-size: 34px;
+
+    margin-bottom: 25px;
+}
+
+.success p {
+    font-size: 19px;
+
+    line-height: 2;
+}
+
+
+/* =====================================
+   پایین سایت
+===================================== */
+
+footer {
+    width: 100%;
+
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 16px;
+}
+
+
+/* =====================================
+   پرچم‌های دو طرف سایت
+===================================== */
+
+.side-flag {
+    position: fixed;
+
+    top: 180px;
+
+    width: 130px;
+
+    z-index: 1000;
+
+    pointer-events: none;
+}
+
+.side-flag.left {
+    left: 10px;
+}
+
+.side-flag.right {
+    right: 10px;
+
+    transform: scaleX(-1);
+}
+
+.side-flag img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =====================================
+   موبایل
+===================================== */
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 12px 15px;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    nav h2 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 15px;
+
+        margin-right: 10px;
+    }
+
+
+    .hero img {
+        min-height: 250px;
+    }
+
+
+    .chef-banner img {
+        height: 300px;
+    }
+
+    .chef-banner h1 {
+        font-size: 27px;
+    }
+
+
+    .burger-preview img {
+        height: 300px;
+    }
+
+    .burger-preview h1 {
+        font-size: 27px;
+    }
+
+
+    .category-banner {
+        height: 300px;
+    }
+
+
+    .page-title {
+        font-size: 28px;
+    }
+
+
+    .foods {
+        grid-template-columns: 1fr;
+
+        width: 90%;
+    }
+
+
+    .menu-buttons {
+        flex-direction: column;
+    }
+
+    .menu-buttons a {
+        width: 90%;
+
+        max-width: 350px;
+    }
+
+
+    .side-flag {
+        width: 65px;
+
+        top: 150px;
+    }
+
+}
+
+
+/* =====================================
+   موبایل خیلی کوچک
+===================================== */
+
+@media (max-width: 450px) {
+
+    .category-banner {
+        height: 230px;
+    }
+
+    .chef-banner img {
+        height: 230px;
+    }
+
+    .burger-preview img {
+        height: 230px;
+    }
+
+    .food {
+        padding: 20px;
+    }
+
+    .success {
+        margin: 60px auto;
+
+        padding: 35px 20px;
+    }
+
+}
